@@ -31,6 +31,5 @@ jobs:
         with:
           flutter-version: "3.3.10"
           channel: "stable"
-      - name: runs terms
       - run: dart pub global activate melos
       - run: melos run:buyer
