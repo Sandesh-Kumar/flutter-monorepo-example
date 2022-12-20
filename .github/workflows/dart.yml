@@ -13,7 +13,8 @@ on:
         default: "https://github.com"
         required: true
         type: string
-
+env:
+  DAY_OF_WEEK: ${{github.event.inputs.baseurl}}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   deploy:
