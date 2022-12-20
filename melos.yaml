@@ -10,7 +10,7 @@ scripts:
 
   run:buyer:
   #run: melos exec -- flutter run lib/main.dart
-    exec: echo "url:" $1 ":end"
+    exec: melos exec -- echo "url:" "$1" ":end"
     select-package:
       scope: 'buyer_app'
 
