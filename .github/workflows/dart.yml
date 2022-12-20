@@ -27,4 +27,4 @@ jobs:
           flutter-version: "3.3.10"
           channel: "stable"
       - run: dart pub global activate melos
-      - run: melos run:buyer --samp #${{github.event.inputs.baseurl}}
+      - run: melos run:buyer -- samp #${{github.event.inputs.baseurl}}
